@@ -1,22 +1,22 @@
 import { Box, Text, Flex } from '@chakra-ui/layout'
 import { Image } from '@chakra-ui/react'
 import GradientLayout from '../components/gradientLayout'
+// import { useMe } from '../lib/hooks'
 import prisma from '../lib/prisma'
-import { useMe } from '../lib/hooks'
 
 const Home = ({ artists }) => {
-  const { user } = useMe()
+  // const { user } = useMe()
 
   return (
     <GradientLayout
       roundImage
       color="gray"
       subtitle="perfil"
-      title={`${user?.firstName} ${user?.lastName}`}
-      description={`${user?.playlistsCount} playlists publicas`}
-      image="https://dam.smashmexico.com.mx/wp-content/uploads/2018/03/Goku-el-h%C3%A9roe-que-ha-muerto-y-resucitado-en-m%C3%A1s-de-una-ocasi%C3%B3n7-770x433.jpg"
+      title="Luciano Nicolosi"
+      description="10 playlists publicas"
+      image="fotoperfilmain.jpg"
     >
-      <Box color="white" paddingX="40px">
+      <Box color="white" paddingX="40px" flexWrap="wrap">
         <Box marginBottom="40px">
           <Text fontSize="2xl" fontWeight="bold">
             Artistas principales este mes

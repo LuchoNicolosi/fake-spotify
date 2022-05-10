@@ -112,7 +112,7 @@ const Player = ({ songs, activeSong }) => {
   }
 
   return (
-    <Box>
+    <Box display="grid">
       <Box>
         <ReactHowler
           playing={playing}
@@ -185,7 +185,7 @@ const Player = ({ songs, activeSong }) => {
 
       <Box color="gray.600">
         <Flex justify="center" align="center">
-          <Box width="10%">
+          <Box width="10%" marginRight="10px">
             <Text fontSize="xs">{formatTime(seek)}</Text>
           </Box>
           <Box width="80%">

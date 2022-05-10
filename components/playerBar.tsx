@@ -9,7 +9,7 @@ const PlayerBar = () => {
     <Box height="100px" width="100vw" bg="gray.900" padding="10px">
       <Flex align="center">
         {activeSong ? (
-          <Box padding="20px" color="white" width="30%">
+          <Box padding="20px" color="white" width="30%" display="grid">
             <Text fontSize="large">{activeSong.name}</Text>
             <Text fontSize="sm">{activeSong.artist.name}</Text>
           </Box>

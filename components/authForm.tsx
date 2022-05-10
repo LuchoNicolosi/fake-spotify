@@ -31,15 +31,15 @@ const AuthForm: FC<{ mode: 'signin' | 'signup' }> = ({ mode }) => {
         <NextImage src="/logo.png" height={40} width={120} />
       </Flex>
       <Flex justify="center" align="center" height="calc(100vh - 100px)">
-        <Box padding="50px" bg="gray.900" borderRadius="6px">
+        <Box padding="50px" bg="gray.900" borderRadius="6px" width="80vw">
           <form onSubmit={handlerSubmit}>
             <Input
-              placeholder="email"
+              placeholder="email:user@test.com"
               type="email"
               onChange={(e) => setEmail(e.target.value)}
             />
             <Input
-              placeholder="contraseña"
+              placeholder="password:password"
               type="password"
               onChange={(e) => setPassword(e.target.value)}
             />

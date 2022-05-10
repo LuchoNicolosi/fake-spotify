@@ -15,10 +15,12 @@ const GradientLayout = ({
       height="100%"
       overflowY="auto"
       bgGradient={`linear(${color}.500 0%, ${color}.600 15%, ${color}.700 40%, rgba(0,0,0,0.95) 75%)`}
+      display="grid"
     >
-      <Flex bg={`${color}.600`} padding="40px" align="end">
+      <Flex bg={`${color}.600`} padding="0px" align="end" flexWrap="wrap">
         <Box padding="20px">
           <Image
+            width="100%"
             boxSize="160px"
             boxShadow="2xl"
             src={image}
