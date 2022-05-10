@@ -1,6 +1,25 @@
 {
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
   "name": "fake-spotify",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -16,7 +35,7 @@
     "@emotion/styled": "^11.6.0",
     "@prisma/client": "^3.6.0",
     "bcrypt": "^5.0.1",
-    "cookie": "^0.4.2",
+    "cookie": "^0.4.1",
     "cookies": "^0.8.0",
     "easy-peasy": "^5.0.4",
     "format-duration": "^1.4.0",
@@ -28,12 +47,9 @@
     "react-howler": "^5.2.0",
     "react-icons": "^4.3.1",
     "reset-css": "^5.0.1",
-    "superjson": "^1.9.1",
     "swr": "^1.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@types/node": "^14.14.17",
     "@types/react": "^17.0.37",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
@@ -49,10 +65,17 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "prettier": "^2.4.1",
     "prisma": "^3.6.0",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.6.4"
+    "ts-node": "^10.4.0"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
-  }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
