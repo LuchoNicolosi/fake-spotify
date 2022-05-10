@@ -31,7 +31,7 @@ const AuthForm: FC<{ mode: 'signin' | 'signup' }> = ({ mode }) => {
         <NextImage src="/logo.png" height={40} width={120} />
       </Flex>
       <Flex justify="center" align="center" height="calc(100vh - 100px)">
-        <Box padding="50px" bg="gray.900" borderRadius="6px" width="80vw">
+        <Box padding="50px" bg="gray.900" borderRadius="6px" margin="20px">
           <form onSubmit={handlerSubmit}>
             <Input
               placeholder="email:user@test.com"
